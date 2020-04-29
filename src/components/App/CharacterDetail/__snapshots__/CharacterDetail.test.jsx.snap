@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character Detail component renders Character Detail 1`] = `
+<section>
+  <h1>
+    Fox Maulder
+  </h1>
+  <img
+    scr="maulder.png"
+  />
+  <p>
+    Description: 
+    he wants to believe
+  </p>
+  <p>
+    Categories:
+    every episode except that one season without him
+  </p>
+</section>
+`;

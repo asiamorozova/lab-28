@@ -1,21 +1,23 @@
-import React from 'react': 
+import React from 'react'; 
+import PropTypes from 'prop-types';
 
-const CharacterDetail = ({name, image, description, categories }) => (
-    <section> 
-        <h1>{name}</h1>
-        <img scr={image} />
+
+const CharacterDetail = ({ name, image, description, categories }) => (
+  <section> 
+    <h1>{name}</h1>
+    <img scr={image} />
     <p>Description: {description}</p>
-<p>Categories:{categories}</p>
+    <p>Categories:{categories}</p>
 
 
-    </section>
+  </section>
 );
 
 CharacterDetail.propTypes = {
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired, 
-    categories: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired, 
+  categories: PropTypes.string.isRequired
 
 
 };
