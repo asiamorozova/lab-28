@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CharacterDetail from '../CharacterDetail/CharacterDetail.jsx';
+import IndividualDetail from '../IndividualDetail/IndividualDetail';
 
 const CharacterList = ({ characters }) => {
   const charactersListed = characters.map(character => (
-    <li key ={ `${character.image} + ${ character.name}`}>
-      <CharacterDetail {...character} />
+    <li key ={character._id}>
+      <IndividualDetail {...character} />
     </li>
   ));
 
@@ -18,10 +18,8 @@ const CharacterList = ({ characters }) => {
 
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired, 
-    categories: PropTypes.string.isRequired
+    
+    _id: PropTypes.string.isRequired
   })).isRequired
   
 };

@@ -5,16 +5,12 @@ exports[`Character Detail component renders Character Detail 1`] = `
   <h1>
     Fox Maulder
   </h1>
-  <img
-    scr="maulder.png"
-  />
+  <img />
   <p>
-    Description: 
-    he wants to believe
+    Quests: 
   </p>
   <p>
-    Categories:
-    every episode except that one season without him
+    Appearances:
   </p>
 </section>
 `;

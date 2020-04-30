@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const CharacterDetail = ({ name, image, description, categories }) => (
+const CharacterDetail = ({ name, photo, quests, appearances }) => (
   <section> 
     <h1>{name}</h1>
-    <img scr={image} />
-    <p>Description: {description}</p>
-    <p>Categories:{categories}</p>
+    <img src={photo} />
+    <p>Quests: {quests}</p>
+    <p>Appearances:{appearances}</p>
 
 
   </section>
@@ -15,9 +15,9 @@ const CharacterDetail = ({ name, image, description, categories }) => (
 
 CharacterDetail.propTypes = {
   name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired, 
-  categories: PropTypes.string.isRequired
+  photo: PropTypes.string.isRequired,
+  quests: PropTypes.string.isRequired, 
+  appearances: PropTypes.string.isRequired
 
 
 };

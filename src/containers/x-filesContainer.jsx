@@ -7,9 +7,9 @@ const xFilesCharacters = () => {
 
   useEffect(() => {
     fetchCharacters()
-      .then(characters => setCharacters(characters));
-  });
-
+      .then(res => setCharacters(res));
+  }, []);
+  console.log(characters);
   return (
     <>
       <CharacterList characters={characters} />
