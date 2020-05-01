@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character Detail component renders Character Detail 1`] = `
+<section>
+  <h1>
+    Fox Maulder
+  </h1>
+  <img />
+  <p>
+    Quests: 
+  </p>
+  <p>
+    Appearances:
+  </p>
+</section>
+`;
