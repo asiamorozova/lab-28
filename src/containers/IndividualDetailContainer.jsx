@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { fetchById, fetchCharacters } from '../../services/x-files';
+import { fetchById } from '../../services/x-files';
 import { useRouteMatch } from 'react-router-dom';
-import CharacterDetail from '../components/App/CharacterDetail';
+import CharacterDetail from '../components/App/CharacterDetail/CharacterDetail';
 
-const CharacterDetailContainer = () => {
+const IndividualDetailContainer = () => {
   const [character, setCharacter] = useState({});
 
   const match = useRouteMatch('/character/:id');
 
   useEffect(() => {
-    fetchCharacters(match.params.id)
+    fetchById(match.params.id)
       .then(character => setCharacter(character));
   }, []);
 
@@ -20,4 +20,4 @@ const CharacterDetailContainer = () => {
   );
 };
 
-export default CharacterDetailContainer;
+export default IndividualDetailContainer;
